@@ -37,7 +37,14 @@ function addItem(e) {
   const item = {
     text,
     done: false
- }
+ };
+ 
+ items.push(item);
+ this.reset();
+}
+
+function populateList() {
+  
 }
 
 addItems.addEventListener('submit', addItem)
