@@ -43,8 +43,14 @@ function addItem(e) {
  this.reset();
 }
 
-function populateList() {
-  
+function populateList(plates = [], platesList) {
+  platesList.innerHTML = plates.map((plate, i) => {
+    return `
+    
+    `;
+
+  });
+
 }
 
 addItems.addEventListener('submit', addItem)
